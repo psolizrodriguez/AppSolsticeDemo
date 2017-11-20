@@ -454,7 +454,7 @@ Object of Contact type.
 ##### Description: 
 This method allows us to update the corresponding values of a Contact
 ##### URI: 
-http://18.220.231.8:8080s/contact
+http://18.220.231.8:8080/contact
 ##### Parameters
 **-contactId:** variable of type Long, referencing the contactId of the Contact to be updated
 ##### Method: 
