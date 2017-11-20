@@ -45,7 +45,7 @@ A pure JavaScript and JQuery client was created in order to provide a GUI and a 
 http://18.220.231.8:8080/ 
 
 ## Package Structure
-**-com.solstice.contact:** Contains the Spring Boot main class (Application.java) and the sample JUnit Test case (ContactControllerTest.java). 
+**-com.solstice.contact:** Contains the Spring Boot main class (Application.java) and the sample JUnit Test case (ContactControllerTest.java).  
 **-com.solstice.contact.utils:** Classes for image processing.  
 **-com.solstice.contact.domain:** Contains the Entities.   
 **-com.solstice.contact.repository:** Contains the Repository Classes layer.  
