@@ -67,7 +67,7 @@ http://18.220.231.8:8080/
 ![ERD](https://i.imgur.com/YMEcBxP.png)  
 
 ## Endpoints 
-### 1. com.solstice.contact.web.resource.impl.ContactResourceImpl.java (/contact)
+### 1. com.solstice.contact.web.resource.impl.ContactResourceImpl.java (contact)
 #### a. List all Contacts
 ##### Description: 
 This method returns all the records of the Contact table
@@ -125,7 +125,7 @@ Collection of Contact type.
     }
 ]
 ```
-#### b. List all Contacts by Email  (/email/{email})
+#### b. List all Contacts by Email  (email/{email})
 ##### Description: 
 This method returns all the records of the Contact table with matching email
 ##### URI: 
@@ -180,7 +180,7 @@ Collection of Contact type.
     }
 ]
 ```
-#### c. List all Contacts by Phone Number  (/phoneNumber/{phoneNumber})
+#### c. List all Contacts by Phone Number  (phoneNumber/{phoneNumber})
 ##### Description: 
 This method returns all the records of the Contact table with matching personal or work phone number
 ##### URI: 
@@ -235,7 +235,7 @@ Collection of Contact type.
     }
 ]
 ```
-#### d. List all Contacts by City (/address/city/{city})
+#### d. List all Contacts by City (address/city/{city})
 ##### Description: 
 This method returns all the records of the Contact with matching city on their address 
 ##### URI: 
@@ -290,7 +290,7 @@ Collection of Contact type.
     }
 ]
 ```
-#### e. List all Contacts by State (/address/state/{state})
+#### e. List all Contacts by State (address/state/{state})
 ##### Description: 
 This method returns all the records of the Contact with matching state on their address 
 ##### URI: 
@@ -345,7 +345,7 @@ Collection of Contact type.
     }
 ]
 ```
-#### f. Retrieve a contact record (/{contactId})
+#### f. Retrieve a contact record ({contactId})
 ##### Description: 
 This method returns one record corresponding the contactId sent on the URL
 ##### URI: 
@@ -450,7 +450,7 @@ Object of Contact type.
     }
 }
 ```
-#### h. Update a contact record (/{contactId})
+#### h. Update a contact record ({contactId})
 ##### Description: 
 This method allows us to update the corresponding values of a Contact
 ##### URI: 
@@ -490,7 +490,7 @@ Object of ContactRequest type.
 ```
 Ok: 200
 ```
-#### i. Delete a contact record (/{contactId})
+#### i. Delete a contact record ({contactId})
 ##### Description: 
 This method allows us to delete a Contact
 ##### URI: 
@@ -510,6 +510,28 @@ none
 ##### Response:  
 ```
 Ok: 200
+```
+#### j. Retrieve a Profile Picture (profilePicture/{contactId})
+##### Description: 
+This method returns the profile picture corresponding to the contactId sent as a parameter
+##### URI: 
+http://18.220.231.8:8080/contact/profilePicture/1
+##### Parameters
+**-contactId:** variable of type Long, referencing the contactId of the Profile Image to be retrieved
+##### Method: 
+GET  
+##### Headers:   
+```
+Accept:application/json  
+```
+##### Body:  
+```
+none
+```
+##### Response:  
+Object of MediaType.IMAGE_JPEG_VALUE type.
+```
+JPEG File
 ```
 ## JUnit Test Cases
 ### com.solstice.contact.web.resource.test.ContactResourceImplTest.java
