@@ -25,8 +25,8 @@ Also please provide a unit test for at least one of the endpoints you create.
 ## Solution Description
 
 The solution was built with "Spring Tool Suite" and packed with maven. Is packed as a jar running on an AWS Server http://18.220.231.8:8080/ .  
-The jar can be found in the repository in the target folder [AppSolsticeDemo-0.1.0.jar](target/AppSolsticeDemo-0.1.0.jar).  
-Can be run locally with the command "java -jar AppSolsticeDemo-0.1.0.jar". Java 1.8 needs to be installed in your machine.
+The jar can be found in the following link [AppSolsticeDemo-0.1.0.jar](https://www.dropbox.com/s/4x1otooye3k1b3y/AppSolsticeDemo-0.1.0.jar), or generated with the code with the command "mvn package".  
+Can be run locally with the command "java -jar AppSolsticeDemo-0.1.0.jar" with the execution permission given (777). Java 1.8 needs to be installed in your machine.
 
 ## Import Project in Spring Tool Suite
 1) Create directory "AppSolsticeDemo" inside of your workspace  
